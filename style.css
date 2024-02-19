@@ -9,6 +9,99 @@ html {
   padding: 0;
   scroll-behavior: smooth;
 }
-:root{
+
+:root {
+
+  --color-active: #94CFFF;
+  --main-text-color: #FFFFFF;
+  --background-button-color: #0B0E66;
+  --border-button-color: #26C7EA;
+  --button-text-color: #26C6EA;
+  --title-main-color: #0A3853;
+  --name-main-color: #000000;
+  --title-section-color: #141414;
+
+  --main-fonts: "Headland One", serif;
+  --font-eng: "Hammersmith One", sans-serif;
+  --font-main-text: "Inter", sans-serif;
+}
+
+.header {
+  background-image: linear-gradient(to right, rgba(43, 74, 97, 0.87), rgba(43, 74, 97, 0.87)), url(images/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1490px;
+  height: 150px;
+  margin-top: -16px;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.header_logo {
+  margin-top: 39px;
+  margin-bottom: -39px;
+}
+
+.header_menu {
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  gap: 38px;
+}
+
+.eng_menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -55px;
+}
+
+.active {
+  color: var(--color-active);
+  font-family: var(--font-main-text);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.header_link {
+  color: var(--main-text-color);
+  font-family: var(--font-main-text);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.button_header {
+  width: 141px;
+  height: 41.69px;
+  box-sizing: border-box;
+  border: 2px solid var(--border-button-color);
+  border-radius: 35px 0px 35px 0px;
+  background: var(--background-button-color);
   
+}
+
+.button_paragraph {
+  color: var(--button-text-color);
+  font-family: var(--main-fonts);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  margin-top: 5px;
 }
